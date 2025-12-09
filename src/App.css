@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  --spacing-mContainer: 1320px;
+  --font-dm: "DM Sans", sans-serif;
+  --color-mPrimary: #262626;
+}
+/* @layer components {
+  .header-style {
+    @apply p-10 font-normal text-[50px] text-white bg-black gap-x-10;
+  }
+} */

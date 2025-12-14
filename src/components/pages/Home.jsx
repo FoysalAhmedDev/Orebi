@@ -1,5 +1,9 @@
 import Banner from "../layout/Banner";
+import Banner2nd from "../layout/Banner2nd";
+import Bestsellers from "../layout/Bestsellers";
+import NewArrival from "../layout/NewArrival";
 import Sales from "../layout/Sales";
+import SpecialOffer from "../layout/SpecialOffer";
 import Terms from "../layout/Terms";
 
 const Home = () => {
@@ -9,6 +13,10 @@ const Home = () => {
       <Banner/>
        <Terms/>
        <Sales/>
+       <NewArrival/>
+       <Bestsellers/>
+       <Banner2nd/>
+       <SpecialOffer/>
     </>
   );
 };

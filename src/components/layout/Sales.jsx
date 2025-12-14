@@ -13,7 +13,7 @@ const Sales = () => {
     <>
       <div className="pt-35 pb-32">
         <Container>
-          <Flex className={`gap-x-10`}>
+          {/* <Flex className={`gap-x-10`}>
             <div className="relative">
               <Image imgSrc={Ads1} />
               <Link to={`/shop`}>
@@ -40,6 +40,25 @@ const Sales = () => {
                     btnTxt={`Shop Now`}
                     className={`absolute left-[45px] bottom-[45px]`}
                   />
+                </Link>
+              </div>
+            </div>
+          </Flex> */}
+          <Flex className={`gap-x-10`}>
+            <div className="">
+              <Link to={`/shop`}>
+                <Image imgSrc={Ads1} />
+              </Link>
+            </div>
+            <div className="space-y-9">
+              <div className="">
+                <Link to={`/shop`}>
+                  <Image imgSrc={Ads2} />
+                </Link>
+              </div>
+              <div className="">
+                <Link to={`/shop`}>
+                  <Image imgSrc={Ads3} />
                 </Link>
               </div>
             </div>

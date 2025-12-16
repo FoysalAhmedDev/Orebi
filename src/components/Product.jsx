@@ -9,10 +9,10 @@ import { FaShoppingCart } from "react-icons/fa";
 const Product = ({ ProductImg, BadgeTxt, BadgeTitle, BadgePrice }) => {
   return (
     <>
-      <div className="relative group">
+      <div className="relative group mx-4">
         <Image imgSrc={ProductImg} />
         <Badge BadgeTxt={BadgeTxt} className={`absolute top-5 left-5`} />
-        <div className="p-5 absolute bottom-0 left-0 w-full invisible group-hover:visible group-hover:bg-white group-hover:text-mPrimary duration-500 ease-in-out transition">
+        <div className="p-5 mb-13 absolute bottom-0 left-0 w-full invisible group-hover:visible group-hover:bg-white group-hover:text-mPrimary duration-500 ease-in-out transition">
           <Flex className={`justify-end pb-4`}>
             <h3 className="pr-4 font-normal text-[16px] text-[#767676] font-dm hover:text-mPrimary duration-500 ease-in-out transition">
               Add to Wish List
@@ -32,15 +32,15 @@ const Product = ({ ProductImg, BadgeTxt, BadgeTitle, BadgePrice }) => {
             <FaShoppingCart />
           </Flex>
         </div>
+        <Flex className={`justify-between mt-6`}>
+          <h3 className="font-bold text-[20px] text-mPrimary font-dm">
+            {BadgeTitle}
+          </h3>
+          <h3 className="font-normal text-[16px] leading-[30px] text-[#767676] font-dm">
+            {BadgePrice}
+          </h3>
+        </Flex>
       </div>
-      <Flex className={`justify-between mt-6`}>
-        <h3 className="font-bold text-[20px] text-mPrimary font-dm">
-          {BadgeTitle}
-        </h3>
-        <h3 className="font-normal text-[16px] leading-[30px] text-[#767676] font-dm">
-          {BadgePrice}
-        </h3>
-      </Flex>
     </>
   );
 };

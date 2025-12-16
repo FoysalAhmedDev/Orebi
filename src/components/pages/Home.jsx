@@ -10,13 +10,13 @@ const Home = () => {
   return (
     <>
       {/* <h1 className='bg-blue-500 text-white text-center p-10 text-3xl capitalize'>this is home page</h1> */}
-      <Banner/>
-       <Terms/>
-       <Sales/>
-       <NewArrival/>
-       <Bestsellers/>
-       <Banner2nd/>
-       <SpecialOffer/>
+      <Banner />
+      <Terms />
+      <Sales />
+      <NewArrival />
+      <Bestsellers />
+      <Banner2nd />
+      <SpecialOffer />
     </>
   );
 };
